@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy: #0B2E63;
+  --navy2: #1D4ED8;
+  --gold: #F59E0B;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Cairo', sans-serif;
+  direction: rtl;
+}
+
+@layer utilities {
+  .text-navy { color: var(--navy); }
+  .bg-navy { background-color: var(--navy); }
+  .border-navy { border-color: var(--navy); }
+}
